@@ -5,9 +5,10 @@
   justify-content: center;
   height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 1em 2em;
 
   .header-container {
-    height: 15%;
+    height: 7%;
   }
 
   .main-container {
@@ -18,5 +19,6 @@
   .footer-container {
     width: 100%;
     height: 5%;
+    align-self: flex-end;
   }
 }
