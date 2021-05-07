@@ -1,7 +1,10 @@
 // == Import npm
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 
 import Home from 'src/components/Home';
+import About from 'src/components/About';
+import Projects from 'src/components/Projects';
 import Footer from 'src/components/Layout/Footer';
 import Header from 'src/components/Layout/Header';
 
@@ -14,9 +17,17 @@ const App = () => (
     <div className="header-container">
       <Header />
     </div>
-    <div className="main-container">
-      <Home />
-    </div>
+    <Switch>
+      <Route path="/" exact>
+        <Home />
+      </Route>
+      <Route path="/about">
+        <About />
+      </Route>
+      <Route path="/projects">
+        <Projects />
+      </Route>
+    </Switch>
     <div className="footer-container">
       <Footer />
     </div>

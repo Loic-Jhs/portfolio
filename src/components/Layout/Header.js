@@ -1,5 +1,6 @@
 // == Import npm
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // == Import
 import './layout.scss';
@@ -8,9 +9,9 @@ import './layout.scss';
 const Header = () => (
   <header>
     <nav className="navbar-container">
-      <a href="index.php">Accueil</a>
-      <a href="projects.php">Réalisations</a>
-      <a href="about.php">À Propos</a>
+      <Link to="/">Accueil</Link>
+      <Link to="/projects">Réalisations</Link>
+      <Link to="/about">À Propos</Link>
     </nav>
   </header>
 );
