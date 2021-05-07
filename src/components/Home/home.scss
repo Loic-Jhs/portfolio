@@ -1,10 +1,14 @@
-.app {
-  .title {
-    color: red;
-  }
-  .homeContainer {
-    h1 {
-      color: aquamarine;
-    }
-  }
+.main-content {
+
+  width: 100%;
+  width: 70%;
+  margin: 10% 17%;
+  font-size: 30px;
+
 }
+
+@media (max-width: 480px) {
+    main .main-content p {
+        font-size: 22px;
+    }
+}  
