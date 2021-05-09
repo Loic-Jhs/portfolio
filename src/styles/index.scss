@@ -1,6 +1,16 @@
 @use 'reset';
 @use 'vars';
 
+@font-face {
+  font-family: 'Disket-Mono-Regular';
+  src: url('../assets/fonts/Disket-Mono-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Towards-vm2PA';
+  src: url('../assets/fonts/Towards-vm2PA.otf');
+}
+
 // Ignore all of this, scroll down until you see the next comment.
 // I just like my eye candy. 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100');
