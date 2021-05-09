@@ -12,7 +12,7 @@ const Footer = () => {
   // 1er arg : la variable du state
   // 2eme arg : la fonction qui va modifier cette variable
   // On declare notre state initial en param de useState
-  const [isOpen, setOpen] = useState(true);
+  const [isOpen, setOpen] = useState(false);
   const handleClick = () => {
     setOpen(true)
   };
