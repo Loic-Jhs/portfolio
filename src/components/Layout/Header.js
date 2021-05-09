@@ -9,9 +9,9 @@ import './layout.scss';
 const Header = () => (
   <header>
     <nav className="navbar-container">
-      <Link to="/">Accueil</Link>
-      <Link to="/projects">Réalisations</Link>
-      <Link to="/about">À Propos</Link>
+      <Link data-text="Accueil" className="display-3d" to="/">Accueil</Link>
+      <Link data-text="Réalisations" className="display-3d" to="/projects">Réalisations</Link>
+      <Link data-text="À Propos" className="display-3d" to="/about">À Propos</Link>
     </nav>
   </header>
 );

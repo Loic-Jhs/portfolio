@@ -10,7 +10,7 @@ const Home = () => (
     <main>
       <div className="main-content">
         Salut tout le monde ! Je m'appelle Loïc Jouhans et je suis développeur web junior backend.
-        Bienvenu sur mon site web personnel, j'espère qu'il vous plaira !
+        Bienvenue sur mon site web personnel, j'espère qu'il vous plaira !
       </div>
     </main>
   </div>

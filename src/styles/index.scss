@@ -1,18 +1,51 @@
 @use 'reset';
 @use 'vars';
 
+// Ignore all of this, scroll down until you see the next comment.
+// I just like my eye candy. 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100');
+
 body {
-  font-family: sans-serif;
+  height: 100vh;
+  background: vars.$background;
+  overflow-x: hidden;
+  #root {
+    height: 100%;
+  }
 }
 
-/* 
-  // or you can import your own font
-  @font-face {
-    font-family: 'Roboto';
-    src: url('../assets/fonts/Roboto-Regular.ttf');
-  }
 
-  body {
-    font-family: 'Roboto', sans-serif;
+$redColor: rgba(244,67,54,1);
+$blueColor:rgba(33,150,243,1);
+
+
+.display-3d {
+  cursor: pointer;
+  
+  padding: 10px;
+  animation: icon3d 200ms 10;
+  color: #fff;
+  &:hover {
+    animation: icon3d 200ms infinite;
   }
-*/
+}
+
+
+
+@keyframes icon3d {
+  0% {
+    text-shadow: 5px 4px $redColor, -5px -6px $blueColor;
+  }
+  25% {
+    text-shadow: -5px -6px $redColor, 5px 4px $blueColor;
+  }
+  50% {
+    text-shadow: 5px -4px $redColor, -8px 4px $blueColor;
+  }
+  75% {
+    text-shadow: -8px -4px $redColor, -5px -4px $blueColor;
+  }
+  100% {
+    text-shadow: -5px 0 $redColor, 5px -4px $blueColor;
+  }
+}
