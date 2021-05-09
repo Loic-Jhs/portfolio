@@ -1,0 +1,17 @@
+div.modal-body {
+  width: 50%;
+  height: 50%;
+  background-color: rgb(255, 255, 255);
+  margin: 10em auto;
+  padding: 1em 3em;
+  
+  h2 {
+    text-align: center;
+    font-size: 200%;
+    margin-bottom: .5em;
+  }
+
+  .MuiTextField-root {
+    width: 100%;
+  }
+}
