@@ -35,25 +35,25 @@ const MailModal = ({isOpen, setOpen}) => {
 
   // Le contenu de la modale est inclus dans la variable body
   const body = (
-    <div className="modal-body">
-      <h2 id="simple-modal-title">Formulaire de contact</h2>
+    <div className="modal-body" style={{ outline: 'none' }}>
+      <h2 id="simple-modal-title" className="display-3d">Contact form</h2>
       <TextField
         type="email"
-        label="Votre e-mail"
+        label="Your email"
         value={email}
         onChange={handleChange}
         name="email"
       />
       <TextField
         type="text"
-        label="Objet"
+        label="Subject"
         value={subject}
         onChange={handleChange}
         name="subject"
       />
       <TextField
         type="text"
-        label="Votre message"
+        label="Your message"
         value={message}
         onChange={handleChange}
         name="message"

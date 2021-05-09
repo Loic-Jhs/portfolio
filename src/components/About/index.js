@@ -9,12 +9,12 @@ const About = () => (
   <div className="about">
     <main>
       <div className="text-about-me">
-        Après 9 ans de carrière dans le BTP et plus précisement
-        dans la plomberie et le chauffage, j'ai décidé de changer de métier
-        et de me lancer dans l'aventure du développement web étant passionné par cet univers.
-        J'ai suivi un cursus de 6 mois
-        à l'école O'clock pour y apprendre les bases du développement.
-        Oh, et si vous voulez voir mon CV vous pouvez le télécharger plus bas.
+        After 9 years of career in the construction industry and more precisely
+        in plumbing and heating, I decided to change profession
+        and to launch myself in the adventure of web development
+        being passionate about this universe.
+        I followed a 6 months course at the O'clock school to learn the basics of development.
+        Oh, and if you want to see my CV you can download it below.
       </div>
     </main>
   </div>

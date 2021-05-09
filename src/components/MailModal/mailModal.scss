@@ -1,9 +1,12 @@
 div.modal-body {
   width: 50%;
   height: 50%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(61 65 72 / 77%);
+  backdrop-filter: blur(6px);
+  border-radius: 15px;
   margin: 10em auto;
   padding: 1em 3em;
+  color: azure;
   
   h2 {
     text-align: center;
@@ -14,4 +17,34 @@ div.modal-body {
   .MuiTextField-root {
     width: 100%;
   }
+
+  // Ecart entre les inputs
+  .MuiTextField-root,
+  .MuiTextField-root,
+  .submit-btn-div, textarea {
+    margin-top: 1em;
+    color: azure;
+    border-bottom-color: azure
+  }
+  
+  // Border Color des inputs
+  .MuiInputBase-multiline:after,
+  .MuiInput-underline:after {
+    border-bottom-color: azure ;
+  }
+
+  .MuiInputBase-multiline::before,
+  .MuiInput-underline::before {
+    border-bottom-color: azure ;
+  }
+
+  // Couleur du label lors du focus
+  label.Mui-focused {
+    color: azure;
+  }
+
+  input, label {
+    color: azure;
+  }
+
 }

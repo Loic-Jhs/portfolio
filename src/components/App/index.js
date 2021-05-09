@@ -1,6 +1,7 @@
 // == Import npm
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import noise from 'src/assets/noise-tv.gif';
 
 import Home from 'src/components/Home';
 import About from 'src/components/About';
@@ -13,7 +14,7 @@ import './styles.scss';
 
 // == Composant
 const App = () => (
-  <div className="app">
+  <div className="app" style={{ backgroundImage: `url(${noise})` }}>
     <div className="header-container">
       <Header />
     </div>

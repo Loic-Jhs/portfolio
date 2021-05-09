@@ -1,6 +1,5 @@
 // == Import npm
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import MailModal from 'src/components/MailModal';
 
 // == Import
@@ -14,24 +13,24 @@ const Footer = () => {
   // On declare notre state initial en param de useState
   const [isOpen, setOpen] = useState(false);
   const handleClick = () => {
-    setOpen(true)
+    setOpen(true);
   };
 
   return (
     <footer>
       <MailModal isOpen={isOpen} setOpen={setOpen} />
       <div className="media">
-        <Link to="https://github.com/Loic-Jouhans">
+        <a href="https://github.com/Loic-Jouhans" target="_blank" rel="noreferrer">
           <i className="fa fa-github fa-3x display-3d nav-icon" />
-        </Link>
-        <Link to="https://www.linkedin.com/in/loic-jouhans/">
+        </a>
+        <a href="https://www.linkedin.com/in/loic-jouhans/" target="_blank" rel="noreferrer">
           <i className="fab fa-linkedin fa-3x display-3d nav-icon" />
-        </Link>
-        <Link to="">
+        </a>
+        <a href="https://twitter.com/Jhsl__" target="_blank" rel="noreferrer">
           <i className="fa fa-twitter fa-3x display-3d nav-icon" />
-        </Link>
+        </a>
         <div onClick={handleClick}>
-          <i className="fas fa-envelope fa-3x display-3d nav-icon"/>
+          <i className="fas fa-envelope fa-3x display-3d nav-icon" />
         </div>
       </div>
     </footer>
