@@ -1,6 +1,10 @@
 div.modal-body {
   width: 50%;
   height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
   background-color: rgb(61 65 72 / 77%);
   backdrop-filter: blur(6px);
   border-radius: 15px;
@@ -13,6 +17,24 @@ div.modal-body {
     text-align: center;
     font-size: 200%;
     margin-bottom: .5em;
+  }
+
+  .close-button {
+    position: absolute;
+    background: none;
+    border: none;
+    color: azure;
+    font-size: 35px;
+    right: 20px;
+    top: 18px;
+    transform: rotate(-45deg);
+  }
+
+  .send {
+    font-family: 'Disket-Mono-Regular';
+    background: none;
+    border: none;
+    font-size: 20px;
   }
 
   .MuiTextField-root {
@@ -45,8 +67,12 @@ div.modal-body {
   }
 
   input, label {
-    font-family: 'Disket-Mono-Regular';
+    
     color: azure;
+  }
+
+  label {
+    font-family: 'Disket-Mono-Regular';
   }
 
 }

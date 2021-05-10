@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Modal from '@material-ui/core/Modal';
 import TextField from '@material-ui/core/TextField';
+
 // == Import
 import './mailModal.scss';
 
@@ -13,7 +14,7 @@ const MailModal = ({isOpen, setOpen}) => {
   const [message, setMessage] = useState('');
 
   // function qui appelle une autre fonction,
-  // en l'occurence setOpen qui est à false
+  // en l'occurence setOpen qui est à false (c'est l'état de base de la modale, elle est fermé)
   const handleClose = () => {
     setOpen(false);
   };
@@ -36,7 +37,8 @@ const MailModal = ({isOpen, setOpen}) => {
   // Le contenu de la modale est inclus dans la variable body
   const body = (
     <div className="modal-body" style={{ outline: 'none' }}>
-      <h2 id="simple-modal-title" className="display-3d">Contact form</h2>
+      <h2 id="simple-modal-title">Contact form</h2>
+      <button className="close-button display-3d" type="button" onClick={handleClose}>+</button>
       <TextField
         type="email"
         label="Your email"
@@ -60,6 +62,7 @@ const MailModal = ({isOpen, setOpen}) => {
         multiline
         rows={6}
       />
+      <button className="send display-3d" type="submit">Send</button>
     </div>
   );
 
