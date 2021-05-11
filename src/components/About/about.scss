@@ -1,14 +1,55 @@
 .about {
   display: flex;
   align-self: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
   main {
     display: flex;
+    margin-bottom: 7em;
   }
+
   .text-about-me {
     display: flex;
     margin: 0 2em;
     font: 35px Disket-Mono-Regular;
     color: azure;
+  }
+
+  .face-button {
+    $height: 54px;
+    $accentColor: azure;
+    
+    height: $height;
+    display: inline-block;
+    border: 3px solid $accentColor;
+    border-radius: 6px;
+    font-family: 'Disket-Mono-Regular';
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    color: $accentColor;
+    overflow: hidden;
+    
+    .icon {
+      margin-right: 6px;
+    }
+    
+    .face-primary,
+    .face-secondary {
+      display: block;
+      padding: 0 32px;
+      line-height: $height;
+      transition: margin .4s;
+    }
+    
+    .face-primary {
+      color: azure;
+    }
+    
+    &:hover .face-primary {
+      margin-top: -$height;
+    }
   }
 }
 

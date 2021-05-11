@@ -1,5 +1,6 @@
 // == Import npm
 import React from 'react';
+import CV from 'src/assets/loic-jouhans-CV.pdf';
 
 // == Import
 import './about.scss';
@@ -17,6 +18,16 @@ const About = () => (
         Oh, and if you want to see my CV you can download it below.
       </div>
     </main>
+    <a href={CV} download className="face-button">
+      <div className="face-primary">
+        <span className="icon fa fa-cloud"></span>
+        Download PDF
+      </div>
+      <div className="face-secondary">
+        <span className="icon fa fa-hdd-o"></span>
+        Size: 261 Ko
+      </div>
+    </a>
   </div>
 );
 
