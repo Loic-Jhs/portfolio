@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Modal from '@material-ui/core/Modal';
 import TextField from '@material-ui/core/TextField';
+import emailjs from 'emailjs-com';
 
 // == Import
 import './mailModal.scss';
@@ -17,6 +18,17 @@ const MailModal = ({isOpen, setOpen}) => {
   // en l'occurence setOpen qui est à false (c'est l'état de base de la modale, elle est fermé)
   const handleClose = () => {
     setOpen(false);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    emailjs.sendForm('portfolio-contact', 'template_e87wdqn', event.target, 'user_9GRKOe4VNQeroGaWXLgna')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
   };
 
   // React mets à jour nos composant grâce aux states
@@ -36,7 +48,7 @@ const MailModal = ({isOpen, setOpen}) => {
 
   // Le contenu de la modale est inclus dans la variable body
   const body = (
-    <div className="modal-body" style={{ outline: 'none' }}>
+    <form className="modal-body" style={{ outline: 'none' }} onSubmit={handleSubmit}>
       <h2 id="simple-modal-title">Contact form</h2>
       <button className="close-button display-3d" type="button" onClick={handleClose}>+</button>
       <TextField
@@ -63,7 +75,7 @@ const MailModal = ({isOpen, setOpen}) => {
         rows={6}
       />
       <button className="send display-3d" type="submit">Send</button>
-    </div>
+    </form>
   );
 
   // on retourne la variable body pour afficher le contenu de la modale
