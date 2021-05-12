@@ -16,7 +16,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100');
 
 body {
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   background: vars.$background;
   overflow-x: hidden;
   #root {
@@ -25,8 +26,8 @@ body {
 }
 
 
-$redColor: rgb(195, 175, 240);
-$blueColor:rgb(61, 128, 112);
+$redColor: rgb(182, 32, 241);
+$blueColor:rgb(25, 233, 18);
 
 
 .display-3d {

@@ -6,13 +6,23 @@
   main {
     display: flex;
     margin-bottom: 7em;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .text-about-me {
+  .text-about-me,
+  .skills {
     display: flex;
     margin: 0 2em;
     font: 35px Disket-Mono-Regular;
     color: azure;
+    //margin-top: 2.5em;
+    margin: 2.5em 10em 3em;
+  }
+
+  .icon img {
+    width: 70px;
+    height: 70px;
   }
 
   .face-button {
@@ -30,10 +40,6 @@
     text-decoration: none;
     color: $accentColor;
     overflow: hidden;
-    
-    .icon {
-      margin-right: 6px;
-    }
     
     .face-primary,
     .face-secondary {
