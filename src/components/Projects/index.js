@@ -6,10 +6,27 @@ import './projects.scss';
 
 // == Composant
 const Projects = () => (
+
   <div className="projects">
-    <main>
-    </main>
+    <div className="container">
+      <div className="monitor">
+        <div className="monitorscreen" />
+      </div>
+
+    </div>
+    <div className="container">
+      <div className="monitor">
+        <div className="monitorscreen" />
+      </div>
+
+    </div>
+    <div className="container">
+      <div className="monitor">
+        <div className="monitorscreen" />
+      </div>
+    </div>
   </div>
+
 );
 
 // == Export
