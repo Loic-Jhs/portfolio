@@ -1,5 +1,6 @@
 // == Import npm
 import React, { useState } from 'react';
+import data from 'src/assets/data';
 import TvModal from 'src/components/TvModal';
 import lineUp from 'src/assets/img/lineup-screen.png';
 import jim from 'src/assets/img/giphy-jim.gif';
@@ -16,10 +17,9 @@ const Projects = () => {
   };
 
   return (
+    // le data.map est une boucle du tableau data.js
     <div className="projects">
-      <Television img={lineUp} text="" />
-      <Television img={jim} text="" />
-      <Television img={jim} text="next projects soon" />
+      {data.map((item) => <Television {...item} />)}
     </div>
   );
 };
