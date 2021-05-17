@@ -1,15 +1,15 @@
 // == Import npm
 import React from 'react';
+import PropTypes from 'prop-types';
 
 // == Import
 import './television.scss';
 
 // == Composant
 const Television = ({ img, text, openModal, name }) => {
-
   const handleClick = () => {
-    openModal(event, name)
-  }
+    openModal(name);
+  };
 
   return (
     <div className="container">
@@ -21,5 +21,13 @@ const Television = ({ img, text, openModal, name }) => {
     </div>
   );
 };
+
+Television.propTypes = {
+  img: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  openModal: PropTypes.func.isRequired,
+  name: PropTypes.string.isRequired,
+};
+
 // == Export
 export default Television;

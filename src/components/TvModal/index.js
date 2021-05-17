@@ -1,16 +1,13 @@
 // == Import npm
 import React, { useState } from 'react';
 import Modal from '@material-ui/core/Modal';
-import TextField from '@material-ui/core/TextField';
+import PropTypes from 'prop-types';
 
 // == Import
 import './tvModal.scss';
 
 // == Composant
-const TvModal = ({isOpen, setOpen, name}) => {
-  // ici on défini nos states
-  const [email, setEmail] = useState('');
-
+const TvModal = ({ isOpen, setOpen, name }) => {
   // function qui appelle une autre fonction,
   // en l'occurence setOpen qui est à false (c'est l'état de base de la modale, elle est fermé)
   const handleClose = () => {
@@ -38,6 +35,12 @@ const TvModal = ({isOpen, setOpen, name}) => {
       </Modal>
     </div>
   );
+};
+
+TvModal.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  setOpen: PropTypes.func.isRequired,
+  name: PropTypes.string.isRequired,
 };
 
 // == Export

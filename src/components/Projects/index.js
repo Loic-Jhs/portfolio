@@ -2,10 +2,10 @@
 import React, { useState } from 'react';
 import data from 'src/assets/data';
 import TvModal from 'src/components/TvModal';
+import Television from '../Television';
 
 // == Import
 import './projects.scss';
-import Television from '../Television';
 
 // == Composant
 const Projects = () => {
@@ -15,23 +15,22 @@ const Projects = () => {
   // On stock le tableau data dans le state
   const [datas, setData] = useState(data);
 
-  const [currentProject, setCurrentProject] = useState({});
+  const [currentProject, setCurrentProject] = useState(datas[0]);
 
   // Fonction qui gère l'ouverture de la modale lors du click sur une Television
-  const openModal = (event, identifier) => {
+  const openModal = (identifier) => {
     // Avec find() on récupère l'item qui a le meme identifier. Ici l'identifier
     // est recuperer en argument de la fonction openModal() utilsée dans Television
     // lors du handleClick
-    const clickedProject = datas.find((item) => item.name === identifier )
+    const clickedProject = datas.find((item) => item.name === identifier);
 
     // Ensuite on le stock dans le state, qui sont également injectés dans le composant TvModal
-    setCurrentProject(clickedProject)
+    setCurrentProject(clickedProject);
 
     // On peut maintenant ouvrir la modal
     setOpen(true);
   };
 
-  // console.log(datas)
   return (
     // le data.map est une boucle du tableau data.js
     <div className="projects">

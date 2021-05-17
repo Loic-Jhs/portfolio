@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Modal from '@material-ui/core/Modal';
 import TextField from '@material-ui/core/TextField';
 import emailjs from 'emailjs-com';
+import PropTypes from 'prop-types';
 
 // == Import
 import './mailModal.scss';
@@ -93,6 +94,11 @@ const MailModal = ({isOpen, setOpen}) => {
       </Modal>
     </div>
   );
+};
+
+MailModal.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  setOpen: PropTypes.func.isRequired,
 };
 
 // == Export
