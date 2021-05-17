@@ -5,16 +5,21 @@ import React from 'react';
 import './television.scss';
 
 // == Composant
-const Television = ({ img, text, handleClick }) => (
+const Television = ({ img, text, openModal, name }) => {
 
-  <div className="container">
-    <div className="monitor" onClick={handleClick}>
-      <div className="monitorscreen" style={{ backgroundImage: `url(${img})` }}>
-        <p>{text}</p>
+  const handleClick = () => {
+    openModal(event, name)
+  }
+
+  return (
+    <div className="container">
+      <div className="monitor" onClick={handleClick}>
+        <div className="monitorscreen" style={{ backgroundImage: `url(${img})` }}>
+          <p>{text}</p>
+        </div>
       </div>
     </div>
-  </div>
-);
-
+  );
+};
 // == Export
 export default Television;

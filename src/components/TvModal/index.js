@@ -7,7 +7,7 @@ import TextField from '@material-ui/core/TextField';
 import './tvModal.scss';
 
 // == Composant
-const TvModal = ({isOpen, setOpen}) => {
+const TvModal = ({isOpen, setOpen, name}) => {
   // ici on défini nos states
   const [email, setEmail] = useState('');
 
@@ -20,7 +20,7 @@ const TvModal = ({isOpen, setOpen}) => {
   // Le contenu de la modale est inclus dans la variable body
   const body = (
     <div className="modal-body" style={{ outline: 'none' }}>
-      <h2 id="simple-modal-title">Project</h2>
+      <h2 id="simple-modal-title">{name}</h2>
       <button className="close-button display-3d" type="button" onClick={handleClose}>+</button>
     </div>
   );

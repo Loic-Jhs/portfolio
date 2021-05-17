@@ -10,21 +10,32 @@ import Television from '../Television';
 // == Composant
 const Projects = () => {
   // State de la modal
-  const [isOpen, setOpen] = useState(true);
+  const [isOpen, setOpen] = useState(false);
 
   // On stock le tableau data dans le state
   const [datas, setData] = useState(data);
 
+  const [currentProject, setCurrentProject] = useState({});
+
   // Fonction qui gère l'ouverture de la modale lors du click sur une Television
-  const handleClick = () => {
+  const openModal = (event, identifier) => {
+    // Avec find() on récupère l'item qui a le meme identifier. Ici l'identifier
+    // est recuperer en argument de la fonction openModal() utilsée dans Television
+    // lors du handleClick
+    const clickedProject = datas.find((item) => item.name === identifier )
+
+    // Ensuite on le stock dans le state, qui sont également injectés dans le composant TvModal
+    setCurrentProject(clickedProject)
+
+    // On peut maintenant ouvrir la modal
     setOpen(true);
   };
 
-  console.log(datas)
+  // console.log(datas)
   return (
     // le data.map est une boucle du tableau data.js
     <div className="projects">
-      <TvModal isOpen={isOpen} setOpen={setOpen} />
+      <TvModal isOpen={isOpen} setOpen={setOpen} {...currentProject} />
       {/* on boucle sur le tableau data, à chaque itération on récup item,
           ( item est tout le contenu d'un seul objet du tableau data )
           et pour chaque item on génère un composant Television et on lui donne ses props */}
@@ -32,7 +43,7 @@ const Projects = () => {
           des propriétés de l'objet dans le composant (ici name, img, text etc) */}
       {/* La props key est demandée par React, pour que chaque composant Télévision soit unique,
           il faut donc lui donner un nombre ou une string unique */}
-      {datas.map((item) => <Television {...item} key={item.name} handleClick={handleClick} />)}
+      {datas.map((item) => <Television {...item} key={item.name} openModal={openModal} />)}
     </div>
   );
 };
