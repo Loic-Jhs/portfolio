@@ -23,6 +23,8 @@ const MailModal = ({isOpen, setOpen}) => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
+    // lorsqu'on soumet le formulaire, le message s'envoie à mon gmail
+    // via EmailJS grâce à cette fonction
     emailjs.sendForm('portfolio-contact', 'template_e87wdqn', event.target, 'user_9GRKOe4VNQeroGaWXLgna')
       .then((result) => {
         console.log(result.text);
@@ -32,7 +34,7 @@ const MailModal = ({isOpen, setOpen}) => {
   };
 
   // React mets à jour nos composant grâce aux states
-  // cette function exécute à chaque changement d'un input
+  // cette function exécute à chaque changement d'un input,
   // une des 3 conditions
   const handleChange = (event) => {
     if (event.target.name === 'email') {
