@@ -2,12 +2,13 @@
 import React, { useState } from 'react';
 import Modal from '@material-ui/core/Modal';
 import PropTypes from 'prop-types';
+import MyCarousel from 'src/components/Carousel';
 
 // == Import
 import './tvModal.scss';
 
 // == Composant
-const TvModal = ({ isOpen, setOpen, name, about, img }) => {
+const TvModal = ({ isOpen, setOpen, name, about }) => {
   // function qui appelle une autre fonction,
   // en l'occurence setOpen qui est à false (c'est l'état de base de la modale, elle est fermé)
   const handleClose = () => {
@@ -18,6 +19,7 @@ const TvModal = ({ isOpen, setOpen, name, about, img }) => {
   const body = (
     <div className="tv-modal-body" style={{ outline: 'none' }}>
       <h2 id="simple-modal-title">{name}</h2>
+      <MyCarousel />
       <p>{about}</p>
       <button className="close-button display-3d" type="button" onClick={handleClose}>+</button>
     </div>
@@ -43,7 +45,6 @@ TvModal.propTypes = {
   setOpen: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
   about: PropTypes.string.isRequired,
-  img: PropTypes.string.isRequired,
 };
 
 // == Export
