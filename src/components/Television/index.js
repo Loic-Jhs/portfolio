@@ -15,7 +15,7 @@ const Television = ({ img, text, openModal, name }) => {
     <div className="container">
       <div className="monitor" onClick={handleClick}>
         <div className="monitorscreen" style={{ backgroundImage: `url(${img})` }}>
-          <p>{text}</p>
+          <p className="preview-text">{text}</p>
         </div>
       </div>
     </div>

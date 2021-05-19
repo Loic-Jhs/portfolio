@@ -10,7 +10,7 @@ import './projects.scss';
 // == Composant
 const Projects = () => {
   // State de la modal
-  const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState(true);
 
   // On stock le tableau data dans le state
   const [datas, setData] = useState(data);
@@ -20,7 +20,7 @@ const Projects = () => {
   // Fonction qui gère l'ouverture de la modale lors du click sur une Television
   const openModal = (identifier) => {
     // Avec find() on récupère l'item qui a le meme identifier. Ici l'identifier
-    // est recuperer en argument de la fonction openModal() utilsée dans Television
+    // est recuperé en argument de la fonction openModal() utilsée dans Television
     // lors du handleClick
     const clickedProject = datas.find((item) => item.name === identifier);
 

@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import './tvModal.scss';
 
 // == Composant
-const TvModal = ({ isOpen, setOpen, name }) => {
+const TvModal = ({ isOpen, setOpen, name, about, img }) => {
   // function qui appelle une autre fonction,
   // en l'occurence setOpen qui est à false (c'est l'état de base de la modale, elle est fermé)
   const handleClose = () => {
@@ -16,8 +16,9 @@ const TvModal = ({ isOpen, setOpen, name }) => {
 
   // Le contenu de la modale est inclus dans la variable body
   const body = (
-    <div className="modal-body" style={{ outline: 'none' }}>
+    <div className="tv-modal-body" style={{ outline: 'none' }}>
       <h2 id="simple-modal-title">{name}</h2>
+      <p>{about}</p>
       <button className="close-button display-3d" type="button" onClick={handleClose}>+</button>
     </div>
   );
@@ -41,6 +42,8 @@ TvModal.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   setOpen: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
+  about: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
 };
 
 // == Export
