@@ -8,7 +8,13 @@ import MyCarousel from 'src/components/Carousel';
 import './tvModal.scss';
 
 // == Composant
-const TvModal = ({ isOpen, setOpen, name, about }) => {
+const TvModal = ({
+  isOpen,
+  setOpen,
+  name,
+  about,
+  carouImg,
+}) => {
   // function qui appelle une autre fonction,
   // en l'occurence setOpen qui est à false (c'est l'état de base de la modale, elle est fermé)
   const handleClose = () => {
@@ -19,7 +25,11 @@ const TvModal = ({ isOpen, setOpen, name, about }) => {
   const body = (
     <div className="tv-modal-body" style={{ outline: 'none' }}>
       <h2 id="simple-modal-title">{name}</h2>
-      <MyCarousel />
+      {/* la condition à la volée ci dessous stipule que
+       si carouImg à partir de son index 0 n'est pas
+       strictement égal à une chaine de carac vide
+       alors on affiche pas le carousel dans les autres modales */}
+      {carouImg[0] !== '' && <MyCarousel carouImg={carouImg} />}
       <p>{about}</p>
       <button className="close-button display-3d" type="button" onClick={handleClose}>+</button>
     </div>
@@ -45,6 +55,9 @@ TvModal.propTypes = {
   setOpen: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
   about: PropTypes.string.isRequired,
+  carouImg: PropTypes.arrayOf(
+    PropTypes.string.isRequired,
+  ).isRequired,
 };
 
 // == Export
