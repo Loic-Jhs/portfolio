@@ -6,7 +6,12 @@ import PropTypes from 'prop-types';
 import './television.scss';
 
 // == Composant
-const Television = ({ img, text, openModal, name }) => {
+const Television = ({
+  img,
+  text,
+  openModal,
+  name,
+}) => {
   const handleClick = () => {
     openModal(name);
   };

@@ -10,10 +10,10 @@ import './projects.scss';
 // == Composant
 const Projects = () => {
   // State de la modal
-  const [isOpen, setOpen] = useState(true);
+  const [isOpen, setOpen] = useState(false);
 
   // On stock le tableau data dans le state
-  const [datas, setData] = useState(data);
+  const [datas] = useState(data);
 
   const [currentProject, setCurrentProject] = useState(datas[0]);
 

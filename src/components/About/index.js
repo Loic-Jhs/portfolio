@@ -39,11 +39,11 @@ const About = () => (
     </main>
     <a href={CV} download className="face-button">
       <div className="face-primary">
-        <span className="icon fa fa-cloud"></span>
+        <span className="icon fa fa-cloud" />
         Download PDF
       </div>
       <div className="face-secondary">
-        <span className="icon fa fa-hdd-o"></span>
+        <span className="icon fa fa-hdd-o" />
         Size: 261 Ko
       </div>
     </a>

@@ -1,16 +1,17 @@
 .carousel {
   width: inherit;
   height: fit-content;
-  align-self: flex-end;
-  margin-bottom: 6vh;
-}
-.slider-right{
-    /* border-top: 2px solid #fdc84b; */
-    /* border-right: 2px solid #fdc84b; */
-    /* border-bottom: 2px solid #fdc84b; */
-    /* border-left: 2px solid #fdc84b; */
+  
+  img {
+    height: 35vh;
+    width: 100%;
+  }
+  .slider-single {
+    .slider-right, .slider-left {
+      div {
+        border: none;
+      }
+    } 
+  }
 }
 
-img {
-  height: 35vh;
-}

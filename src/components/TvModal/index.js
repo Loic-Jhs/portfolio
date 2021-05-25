@@ -1,5 +1,5 @@
 // == Import npm
-import React, { useState } from 'react';
+import React from 'react';
 import Modal from '@material-ui/core/Modal';
 import PropTypes from 'prop-types';
 import MyCarousel from 'src/components/Carousel';
@@ -13,6 +13,7 @@ const TvModal = ({
   setOpen,
   name,
   about,
+  techno,
   carouImg,
 }) => {
   // function qui appelle une autre fonction,
@@ -25,12 +26,13 @@ const TvModal = ({
   const body = (
     <div className="tv-modal-body" style={{ outline: 'none' }}>
       <h2 id="simple-modal-title">{name}</h2>
+      <p className="about-project">{about}</p>
       {/* la condition à la volée ci dessous stipule que
        si carouImg à partir de son index 0 n'est pas
        strictement égal à une chaine de carac vide
        alors on affiche pas le carousel dans les autres modales */}
       {carouImg[0] !== '' && <MyCarousel carouImg={carouImg} />}
-      <p>{about}</p>
+      <p className="techno-project">{techno}</p>
       <button className="close-button display-3d" type="button" onClick={handleClose}>+</button>
     </div>
   );
@@ -55,6 +57,7 @@ TvModal.propTypes = {
   setOpen: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
   about: PropTypes.string.isRequired,
+  techno: PropTypes.string.isRequired,
   carouImg: PropTypes.arrayOf(
     PropTypes.string.isRequired,
   ).isRequired,
