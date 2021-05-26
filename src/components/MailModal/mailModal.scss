@@ -76,3 +76,18 @@
   }
 
 }
+
+// Phone
+@media only screen and (max-width : 479px) {
+  .modal-body  {
+    h2 {
+      font-size: 22px;
+    }
+    .close-button {
+      font-size: 25px;
+      top: 0px;
+    }
+    width: 85%;
+    height: 60%;
+  }
+}

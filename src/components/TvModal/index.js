@@ -23,6 +23,9 @@ const TvModal = ({
   };
 
   // Le contenu de la modale est inclus dans la variable body
+  // On a un style={{ outline: 'none' }} ici car la modale était entouré
+  // d'un carré blanc qui apparaissait aléatoirement
+  // en le mettant ici le bug a été corrigé
   const body = (
     <div className="tv-modal-body" style={{ outline: 'none' }}>
       <h2 id="simple-modal-title">{name}</h2>

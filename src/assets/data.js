@@ -4,6 +4,7 @@ import backof from 'src/assets/imgLineUp/backof.png';
 import resto from 'src/assets/imgLineUp/Capture.png';
 import profile from 'src/assets/imgLineUp/profile.png';
 import ticket from 'src/assets/imgLineUp/ticket.png';
+import portfolio from 'src/assets/img/portfolio.png';
 
 export default [
   {
@@ -16,7 +17,7 @@ export default [
   },
   {
     name: 'my portfolio',
-    img: '',
+    img: portfolio,
     text: '',
     about: 'The project on which you are, is in my personal site which aims to share my creations as a young developer. This project was made with React and Sass.',
     techno: 'Technologies : React Sass',

@@ -20,15 +20,23 @@ header {
   }
 }
 
-@media (max-width: 480px) {
-    .navbar-container{
-        padding:1em 0.1em;
+// Phone
+@media only screen and (max-width : 479px) {
+  header .navbar-container {
+    padding:1em 0.1em;
+    a {
+      font-size: 22px;
     }
+  } 
 
-    .navbar-container a{
-        font-size: 11px;
+  footer .media {
+    a, i {
+      font-size: 25px;
     }
+  }  
+
 }
+
 /*? NAVBAR END */
 
 /*? FOOTER START*/
