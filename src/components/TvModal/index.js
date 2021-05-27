@@ -27,16 +27,18 @@ const TvModal = ({
   // d'un carré blanc qui apparaissait aléatoirement
   // en le mettant ici le bug a été corrigé
   const body = (
-    <div className="tv-modal-body" style={{ outline: 'none' }}>
-      <h2 id="simple-modal-title">{name}</h2>
-      <p className="about-project">{about}</p>
-      {/* la condition à la volée ci dessous stipule que
-       si carouImg à partir de son index 0 n'est pas
-       strictement égal à une chaine de carac vide
-       alors on affiche pas le carousel dans les autres modales */}
-      {carouImg[0] !== '' && <MyCarousel carouImg={carouImg} />}
-      <p className="techno-project">{techno}</p>
-      <button className="close-button display-3d" type="button" onClick={handleClose}>+</button>
+    <div className="parent-tv-modal" style={{ height: '100%', outline: 'none' }}>
+      <div className="tv-modal-body">
+        <h2 id="simple-modal-title">{name}</h2>
+        <p className="about-project">{about}</p>
+        {/* la condition à la volée ci dessous stipule que
+        si carouImg à partir de son index 0 n'est pas
+        strictement égal à une chaine de carac vide
+        alors on affiche pas le carousel dans les autres modales */}
+        {carouImg[0] !== '' && <MyCarousel carouImg={carouImg} />}
+        <p className="techno-project">{techno}</p>
+        <button className="close-button display-3d" type="button" onClick={handleClose}>+</button>
+      </div>
     </div>
   );
 

@@ -1,3 +1,9 @@
+.parent-tv-modal {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 1rem;
+}
+
 .tv-modal-body {
   width: 70%;
   height: 80%;
@@ -9,7 +15,7 @@
   background-color: rgb(61 65 72 / 77%);
   backdrop-filter: blur(25px);
   border-radius: 15px;
-  margin: 10em auto;
+  margin: 0 auto;
   padding: 1em 3em;
   color: azure;
   
@@ -40,3 +46,21 @@
   }
 } 
  
+// Phone
+@media only screen and (max-width : 479px) {
+
+  .tv-modal-body  {
+    h2 {
+      font-size: 22px;
+    }
+    .close-button {
+      font-size: 25px;
+      top: 0px;
+    }
+    p {
+      font-size: 16px;
+    }
+    width: 90%;
+    height: 75%;
+  }
+}

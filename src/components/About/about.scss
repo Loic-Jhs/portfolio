@@ -59,3 +59,17 @@
   }
 }
 
+// Phone
+@media only screen and (max-width : 479px) {
+  .main {
+    .text-about-me {
+      margin: auto 2em;
+      font-size: 25px;
+    }
+
+    .skills {
+      margin: auto 2em;
+      font-size: 25px;
+    }
+  }
+}
