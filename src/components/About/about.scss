@@ -16,8 +16,8 @@
     margin: 0 2em;
     font: 35px Disket-Mono-Regular;
     color: azure;
-    //margin-top: 2.5em;
-    margin: 2.5em 10em 3em;
+    margin: auto 3em;
+    padding-bottom: 4rem;
   }
 
   .icon img {
@@ -61,15 +61,17 @@
 
 // Phone
 @media only screen and (max-width : 479px) {
-  .main {
+  .about {
     .text-about-me {
       margin: auto 2em;
       font-size: 25px;
+      padding-bottom: 4rem;
     }
-
+  
     .skills {
       margin: auto 2em;
       font-size: 25px;
+      padding-bottom: 4rem;
     }
   }
 }
