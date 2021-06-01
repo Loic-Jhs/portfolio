@@ -77,6 +77,14 @@
 
 }
 
+//Application d'un bacground de couleur sur les modales pour firefox
+// car l'effet blur (flou) n'est pas supporté par ce navigateur
+@supports not (backdrop-filter:blur()) {
+  .modal-body {
+    background: #222020;
+  }
+}
+
 // Phone
 @media only screen and (max-width : 479px) {
   .modal-body  {
@@ -85,6 +93,39 @@
     }
     .close-button {
       font-size: 25px;
+      top: 0px;
+    }
+    width: 85%;
+    height: 60%;
+  }
+}
+
+// Tablette
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .modal-body  {
+    h2 {
+      font-size: 25px;
+    }
+    .close-button {
+      font-size: 28px;
+      top: 0px;
+    }
+    width: 85%;
+    height: 60%;
+  }
+}
+
+/* 
+  Tablets, Ipads
+  768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .modal-body  {
+    h2 {
+      font-size: 28px;
+    }
+    .close-button {
+      font-size: 30px;
       top: 0px;
     }
     width: 85%;

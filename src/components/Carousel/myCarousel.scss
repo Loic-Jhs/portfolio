@@ -28,3 +28,35 @@
     }
   }
 }
+
+// Tablet
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .react-3d-carousel {
+    .slider-container {
+      .slider-content {
+        width: 100%;
+        img {
+          height: 28vh;
+        }
+      }
+    }
+  }
+}
+
+/* 
+  Tablets, Ipads
+  768px to 1024px
+  and (orientation: landscape)
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .react-3d-carousel {
+    .slider-container {
+      .slider-content {
+        width: 100%;
+        img {
+          height: 28vh;
+        }
+      }
+    }
+  }
+}
