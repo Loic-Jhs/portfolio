@@ -1,5 +1,5 @@
 // == Import npm
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import data from 'src/assets/data';
 import TvModal from 'src/components/TvModal';
 import Television from '../Television';
@@ -9,6 +9,13 @@ import './projects.scss';
 
 // == Composant
 const Projects = () => {
+  // Ci dessous, le useEffect va permettre
+  // de changer le titre dans l'onglet en fonction
+  // de la page ou on se trouve sur le site.
+  useEffect(() => {
+    document.title = 'Loïc Jouhans | Projects';
+  }, []);
+
   // State de la modal
   const [isOpen, setOpen] = useState(false);
 

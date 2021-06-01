@@ -20,7 +20,7 @@ export default [
     img: portfolio,
     text: '',
     about: 'The project on which you are, is in my personal site which aims to share my creations as a young developer. This project was made with React and Sass.',
-    techno: 'Technologies : React Sass',
+    techno: 'Technologies : React Sass, No Backend',
     carouImg: [''],
   },
   {
