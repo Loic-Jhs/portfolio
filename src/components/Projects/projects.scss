@@ -1,3 +1,11 @@
+.text-projects {
+  margin: 2em 4em;
+  font: 45px 'Rajdhani';
+  font-weight: 500;
+  color: azure;
+  font-family: 'Disket-Mono-Regular';
+}
+
 
 .projects {
   display: flex;
@@ -9,4 +17,31 @@
 .container {
   width: 50%;
   // margin: auto; 
+}
+
+// Phone
+@media only screen and (max-width : 479px) {
+  .text-projects {
+    margin: 1.5em 3em;
+    font-size: 20px;
+  }
+}
+
+// Tablette
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .text-projects {
+    margin: 1.5em 2em;
+    font-size: 28px;
+  }
+}
+
+/* 
+  Tablets, Ipads
+  768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .text-projects {
+    font-size: 40px;
+    margin: 2em 3em;
+  }
 }

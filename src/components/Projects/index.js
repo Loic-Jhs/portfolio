@@ -39,8 +39,14 @@ const Projects = () => {
   };
 
   return (
-    // le data.map est une boucle du tableau data.js
+
     <div className="projects">
+      <div className="text-projects">
+        On this page, you will find the different projects
+        I have done or contributed to.
+        There are not many for the moment, but be patient, it will come!
+      </div>
+      {/* le data.map est une boucle du tableau data.js */}
       <TvModal isOpen={isOpen} setOpen={setOpen} {...currentProject} />
       {/* on boucle sur le tableau data, à chaque itération on récup item,
           ( item est tout le contenu d'un seul objet du tableau data )
