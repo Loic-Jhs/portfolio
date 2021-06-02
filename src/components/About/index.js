@@ -42,8 +42,8 @@ const About = () => {
           <img className="css" src={css} alt="css logo" />
           <img className="js" src={js} alt="javascript logo" />
           <img className="php" src={php} alt="php logo" />
-          <img className="symfo" src={symfo} alt="symfony logo" />
           <img className="sql" src={sql} alt="My sql logo" />
+          <img className="symfo" src={symfo} alt="symfony logo" />
         </div>
       </main>
       <a href={CV} download className="face-button">

@@ -18,6 +18,7 @@ const Footer = () => {
 
   return (
     <footer>
+      <div className="contact-me">Contact me</div>
       <MailModal isOpen={isOpen} setOpen={setOpen} />
       <div className="media">
         <a href="https://github.com/Loic-Jouhans" target="_blank" rel="noreferrer">

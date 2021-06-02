@@ -24,12 +24,15 @@ header {
 
 /*? FOOTER START*/
 footer {
-  width: 100%;
   align-self: flex-end;
+  width: 100%;
   margin-top: 3em;
   margin-bottom: 1em;
   font-family: towardsregular;
-  
+
+  .contact-me {
+    
+  }
   .media {
     display: flex;
     justify-content: center;
