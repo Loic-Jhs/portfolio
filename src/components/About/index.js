@@ -53,7 +53,7 @@ const About = () => {
         </div>
         <div className="face-secondary">
           <span className="icon fa fa-hdd-o" />
-          Size: 261 Ko
+          Size: 46 Ko
         </div>
       </a>
     </div>
