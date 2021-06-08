@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 import './mailModal.scss';
 
 // == Composant
-const MailModal = ({isOpen, setOpen}) => {
+const MailModal = ({ isOpen, setOpen }) => {
   // ici on défini nos states
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
