@@ -27,10 +27,11 @@ const MailModal = ({ isOpen, setOpen }) => {
     // lorsqu'on soumet le formulaire, le message s'envoie à mon gmail
     // via EmailJS grâce à cette fonction
     emailjs.sendForm('portfolio-contact', 'template_e87wdqn', event.target, 'user_9GRKOe4VNQeroGaWXLgna')
-      .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
+      .then(() => {
+        setOpen(false);
+        window.alert('Your message has been sent');
+      }, () => {
+        window.alert('Oops! Something went wrong');
       });
   };
 
