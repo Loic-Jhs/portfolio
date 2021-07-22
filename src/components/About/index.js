@@ -1,6 +1,6 @@
 // == Import npm
 import React, { useEffect } from 'react';
-import CV from 'src/assets/loic-jouhans-CV.pdf';
+import CV from 'src/assets/CV-Loic-Jouhans.pdf';
 import git from 'src/assets/img/git.png';
 import html from 'src/assets/img/html.png';
 import css from 'src/assets/img/css.png';
@@ -37,13 +37,13 @@ const About = () => {
           During my training, here are the different technologies I studied
         </div>
         <div className="icon">
-          <img className="git" src={git} alt="git logo" />
-          <img className="html" src={html} alt="html logo" />
-          <img className="css" src={css} alt="css logo" />
-          <img className="js" src={js} alt="javascript logo" />
-          <img className="php" src={php} alt="php logo" />
-          <img className="sql" src={sql} alt="My sql logo" />
-          <img className="symfo" src={symfo} alt="symfony logo" />
+          <img className="git" title="Git logo" src={git} alt="git logo" />
+          <img className="html" title="HTML logo" src={html} alt="html logo" />
+          <img className="css" title="CSS logo" src={css} alt="css logo" />
+          <img className="js" title="Javascript logo" src={js} alt="javascript logo" />
+          <img className="php" title="PHP logo" src={php} alt="php logo" />
+          <img className="sql" title="My sql logo" src={sql} alt="My sql logo" />
+          <img className="symfo" title="Symfony logo" src={symfo} alt="Symfony logo" />
         </div>
       </main>
       <a href={CV} download className="face-button">
