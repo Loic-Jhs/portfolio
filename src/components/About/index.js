@@ -1,6 +1,6 @@
 // == Import npm
 import React, { useEffect } from 'react';
-import CV from 'src/assets/CV-Loic-Jouhans.pdf';
+import CV from 'src/assets/CV-Loic-Jouhans(portfolio).pdf';
 import git from 'src/assets/img/git.png';
 import html from 'src/assets/img/html.png';
 import css from 'src/assets/img/css.png';
