@@ -1,7 +1,11 @@
+.modal-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .tv-modal-body {
   width: 70%;
-  height: 45em;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -10,16 +14,16 @@
   background-color: rgb(61 65 72 / 77%);
   backdrop-filter: blur(25px);
   border-radius: 15px;
-  margin: 0 auto;
   padding: 1em 3em;
   color: azure;
-  margin-top: 20%;
 
   h2 {
+    letter-spacing: 2.5px;
+    margin-bottom: 20px;
     height: fit-content;
     font-family: 'Towards-vm2PA';
     text-align: center;
-    font-size: 200%;
+    font-size: 45px;
   }
 
   .close-button {
@@ -35,11 +39,21 @@
   
   p {
     color: azure;
-    font-family: 'Disket-Mono-Regular';
     font-size: x-large;
     height: fit-content;
     text-align: center;
   }
+
+  p.about-project {
+    margin-bottom: 10px;
+    font-family: 'Goldman', cursive;
+  }
+  
+  p.techno-project {
+    margin-top: 20px;
+    font-family: 'Disket-Mono-Regular';
+  }
+  
 }
 
 //Application d'un bacground de couleur sur les modales pour firefox
@@ -65,7 +79,6 @@
       font-size: 16px;
     }
     width: 90%;
-    height: 45em;
   }
 }
 
@@ -83,7 +96,6 @@
       font-size: 1.2em;
     }
     width: 90%;
-    height: 40.2em;
   }
 }
 
@@ -104,7 +116,6 @@
       font-size: 21px;
     }
     width: 75%;
-    height: 50em;
     margin-top: 15%;
   }
 }

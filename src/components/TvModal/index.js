@@ -42,12 +42,13 @@ const TvModal = ({
 
   // on retourne la variable body pour afficher le contenu de la modale
   return (
-    <div>
+    <div className="modal-container">
       <Modal
         open={isOpen}
         onClose={handleClose}
         aria-labelledby="simple-modal-title"
         aria-describedby="simple-modal-description"
+        className="modal-component"
       >
         {body}
       </Modal>

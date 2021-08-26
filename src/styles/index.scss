@@ -11,9 +11,14 @@
   src: url('../assets/fonts/Towards-vm2PA.otf');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Goldman&display=swap');
+
 // Ignore all of this, scroll down until you see the next comment.
 // I just like my eye candy. 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100');
+
+$redColor: rgb(182, 32, 241);
+$blueColor:rgb(25, 233, 18);
 
 body {
   height: 100%;
@@ -24,11 +29,6 @@ body {
     height: 100%;
   }
 }
-
-
-$redColor: rgb(182, 32, 241);
-$blueColor:rgb(25, 233, 18);
-
 
 .display-3d {
   cursor: pointer;
