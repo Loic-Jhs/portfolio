@@ -6,6 +6,7 @@
 
 .tv-modal-body {
   width: 70%;
+  max-height: 95vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -116,6 +117,6 @@
       font-size: 21px;
     }
     width: 75%;
-    margin-top: 15%;
+    // margin-top: 15%;
   }
 }

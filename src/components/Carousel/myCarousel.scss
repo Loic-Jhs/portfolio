@@ -1,24 +1,24 @@
-.carousel {
-  width: inherit;
-  height: fit-content;
+// .carousel {
+//   width: inherit;
+//   height: fit-content;
   
-  img {
-    height: 35vh;
-    width: 100%;
-  }
-  .slider-single {
-    .slider-right, .slider-left {
-      div {
-        border: none;
-      }
-    } 
-  }
-}
+//   img {
+//     height: 35vh;
+//     width: 100%;
+//   }
+//   .slider-single {
+//     .slider-right, .slider-left {
+//       div {
+//         border: none;
+//       }
+//     } 
+//   }
+// }
 
 .tv-modal-body {
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   .slides {
-    max-height: 650px;
     display: grid;
     position: relative;
     > .slide {
@@ -147,48 +147,27 @@
   
 }
 
-// Phone
-@media only screen and (max-width : 479px) {
-  .react-3d-carousel {
-    .slider-container {
-      .slider-content {
-        width: 100%;
-        img {
-          height: 20vh;
-        }
-      }
-    }
-  }
-}
+// // Phone
+// @media only screen and (max-width : 479px) {
+//   .tv-modal-body .slideContent{
+//     height: 65vw;
+//   }
+// }
 
-// Tablet
-@media only screen and (min-width : 480px) and (max-width : 767px) {
-  .react-3d-carousel {
-    .slider-container {
-      .slider-content {
-        width: 100%;
-        img {
-          height: 28vh;
-        }
-      }
-    }
-  }
-}
+// // Tablet
+// @media only screen and (min-width : 480px) and (max-width : 767px) {
+//   .tv-modal-body .slideContent{
+//     height: 70vw;
+//   }
+// }
 
-/* 
-  Tablets, Ipads
-  768px to 1024px
-  and (orientation: landscape)
-*/
-@media (min-width: 768px) and (max-width: 1024px) {
-  .react-3d-carousel {
-    .slider-container {
-      .slider-content {
-        width: 100%;
-        img {
-          height: 28vh;
-        }
-      }
-    }
-  }
-}
+// /* 
+//   Tablets, Ipads
+//   768px to 1024px
+//   and (orientation: landscape)
+// */
+// @media (min-width: 768px) and (max-width: 1024px) {
+//   .tv-modal-body .slideContent{
+//     height: 45vw;
+//   }
+// }
