@@ -1,6 +1,9 @@
 @use 'reset';
 @use 'vars';
 
+$redColor: rgb(182, 32, 241);
+$blueColor:rgb(25, 233, 18);
+
 @font-face {
   font-family: 'Disket-Mono-Regular';
   src: url('../assets/fonts/Disket-Mono-Regular.ttf');
@@ -17,8 +20,6 @@
 // I just like my eye candy. 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100');
 
-$redColor: rgb(182, 32, 241);
-$blueColor:rgb(25, 233, 18);
 
 body {
   height: 100%;

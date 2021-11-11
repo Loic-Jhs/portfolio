@@ -8,6 +8,7 @@ import About from 'src/components/About';
 import Projects from 'src/components/Projects';
 import Footer from 'src/components/Layout/Footer';
 import Header from 'src/components/Layout/Header';
+import Error404 from '../Error404';
 
 // == Import
 import './styles.scss';
@@ -27,6 +28,9 @@ const App = () => (
       </Route>
       <Route path="/projects">
         <Projects />
+      </Route>
+      <Route path="/*">
+        <Error404 />
       </Route>
     </Switch>
     <div className="footer-container">

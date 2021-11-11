@@ -49,7 +49,7 @@ const About = () => {
       <a href={CV} download className="face-button">
         <div className="face-primary">
           <span className="icon fa fa-cloud" />
-          Download PDF
+          Download my CV
         </div>
         <div className="face-secondary">
           <span className="icon fa fa-hdd-o" />

@@ -19,7 +19,7 @@ const Home = () => {
     <div className="home">
       <main>
         <div className="main-content">
-          Hi everyone! My name is Loïc Jouhans and I am a junior backend web developer.
+          Hi everyone! My name is Loïc Jouhans and I am a web developer.
           Welcome to my personal website, I hope you'll like it !
         </div>
       </main>

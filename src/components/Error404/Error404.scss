@@ -1,0 +1,34 @@
+.error404 {
+  //margin: 0 2em;
+  margin: auto 4em;
+  font: 60px 'Rajdhani';
+  font-weight: 500;
+  color: azure;
+  font-family: 'Disket-Mono-Regular';
+  text-align: center;
+  animation: icon3d 200ms 15;
+}
+
+// Phone
+@media only screen and (max-width : 479px) {
+  .error404 {
+    margin: auto 3em;
+    font-size: 23px;
+  }
+}
+
+// Tablets
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .error404 {
+    font-size: 48px;
+    margin: auto 2em;
+  }
+}
+
+// Tablets, Laptop
+@media (min-width: 768px) and (max-width: 1024px) {
+  .error404 {
+    font-size: 62px;
+    margin: auto 3em;
+  }
+}
